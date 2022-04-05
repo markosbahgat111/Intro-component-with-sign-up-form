@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import SignUPForm from './components/form.component';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <div className='header'>
+        <h1>Learn to code by watching others</h1>
+        <span>See how experienced developers solve problems in real-time. watching scripted tutorial is great. but understanding how developers think is invaluable.</span>
+      </div>
+      <div className='form'>
+        <SignUPForm />
+      </div>
+    </main>
   );
 }
 
